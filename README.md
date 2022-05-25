@@ -2,7 +2,7 @@
 
 # Project Name: Portfolio-Mobile-Version
 
-> Description the project: Designing a mobile version landing page of my portfolio.
+> Description the project: Designing the mobile version landing page of my portfolio using Flexbox and Figma.
 
 
 
