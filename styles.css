@@ -66,8 +66,8 @@ main {
 
 footer ul {
     display: flex;
-    padding: 0px;
-    gap: 1.0rem;
+    padding: 0;
+    gap: 1rem;
 }
 
 li {
