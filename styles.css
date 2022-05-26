@@ -24,7 +24,7 @@ header {
     align-items: center;
 }
 
-#logo {
+.a_logo {
     color: #6070ff;
     font-weight: 700;
     font-size: 18px;
