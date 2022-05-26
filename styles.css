@@ -80,3 +80,7 @@ li :hover {
   transform: rotate(30deg);
   color: #6070ff;
 }
+
+.work-section{
+  display: grid;
+}
