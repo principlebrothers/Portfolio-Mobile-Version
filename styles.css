@@ -18,6 +18,7 @@ body {
   background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 10px;
 }
 
 header {
@@ -106,7 +107,11 @@ li :hover {
   grid-template-columns: 100%;
   grid-row-gap: 15px;
   background-color: rgba(0, 0, 0, 0.01);
-  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.padding {
+  padding: 10px;
 }
 
 .frontpage-icon {
@@ -188,4 +193,13 @@ button {
 button:hover {
   color: #eef1f8;
   background-color: #344563;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body .head-section{
+  order: 1;
 }
