@@ -12,6 +12,9 @@ body {
   margin: 15px;
   min-width: 375px;
   min-height: 718px;
+}
+
+.head-section {
   background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -38,7 +41,7 @@ header {
   margin-right: 15px;
 }
 
-main {
+.header-main {
   display: flex;
   flex-wrap: wrap;
 }
@@ -81,6 +84,96 @@ li :hover {
   color: #6070ff;
 }
 
-.work-section{
+.get-resume{
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+  color: #396df2;
+  padding: 10px;
+}
+
+/*Work-Station Section*/
+.work-section {
   display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 15px;
+  background-color: rgba(0, 0, 0, 0.01);
+  margin-top: 15px;
+}
+
+.frontpage-icon {
+  width: 295px;
+  height: 220px;
+}
+
+h2 {
+  color: #172B4D;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.canopy {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.counter {
+  color: #C1C7D0;
+  width: 8px;
+  height: 8px;
+
+}
+
+.back-end-dev {
+  color: #7A869A;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.year {
+  color: #7A869A;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.programing-languages {
+  color: #6070FF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.programing-languages a {
+  text-decoration: none;
+  background: #e5e5fa;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+  color: #396df2;
+  border: 1.5px solid #396df2;
+  padding: 10px;
+  transition: 0.3s button ease-in-out;
+}
+
+button:hover {
+  color: #eef1f8;
+  background-color: #344563;
 }
