@@ -97,9 +97,7 @@ li :hover {
 
 .skills-lang {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
+  flex-direction: column; 
 }
 
 /*Work-Station Section*/
@@ -149,6 +147,13 @@ h2 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+}
+
+.tonic-details {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .programing-languages {
