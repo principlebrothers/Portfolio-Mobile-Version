@@ -95,6 +95,13 @@ li :hover {
   padding: 10px;
 }
 
+.skills-lang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
 /*Work-Station Section*/
 .work-section {
   display: grid;
