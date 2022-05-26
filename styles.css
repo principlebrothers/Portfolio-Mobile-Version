@@ -64,7 +64,7 @@ main {
   line-height: 23px;
 }
 
-footer ul {
+#headline-section ul {
   display: flex;
   padding: 0;
   gap: 1rem;
