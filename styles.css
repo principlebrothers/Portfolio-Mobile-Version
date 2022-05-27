@@ -42,7 +42,7 @@ header {
   margin-right: 15px;
 }
 
-.header-main {
+main {
   display: flex;
   flex-wrap: wrap;
 }
@@ -85,7 +85,7 @@ li :hover {
   color: #6070ff;
 }
 
-.get-resume{
+.get-resume {
   width: 200px;
   height: 50px;
   font-weight: 500;
@@ -94,14 +94,10 @@ li :hover {
   border-radius: 8px;
   color: #396df2;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
-.skills-lang {
-  display: flex;
-  flex-direction: column; 
-}
-
-/*Work-Station Section*/
+/* Work-Station Section */
 .work-section {
   display: grid;
   grid-template-columns: 100%;
@@ -120,7 +116,7 @@ li :hover {
 }
 
 h2 {
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -134,21 +130,20 @@ h2 {
 }
 
 .counter {
-  color: #C1C7D0;
+  color: #c1c7d0;
   width: 8px;
   height: 8px;
-
 }
 
 .back-end-dev {
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
 .year {
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -162,7 +157,7 @@ h2 {
 }
 
 .programing-languages {
-  color: #6070FF;
+  color: #6070ff;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -193,13 +188,4 @@ button {
 button:hover {
   color: #eef1f8;
   background-color: #344563;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-body .head-section{
-  order: 1;
 }
