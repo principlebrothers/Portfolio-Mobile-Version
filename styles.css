@@ -53,6 +53,7 @@ main {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  margin-bottom: 5px;
 }
 
 .main-paragraph {
@@ -60,6 +61,7 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+  margin-top: 0;
 }
 
 .connect {
@@ -69,7 +71,7 @@ main {
   line-height: 23px;
 }
 
-#headline-section ul {
+.headline-section ul {
   display: flex;
   padding: 0;
   gap: 1rem;
@@ -78,24 +80,10 @@ main {
 li {
   list-style-type: none;
   color: #505f79;
-  transition: 0.3s all ease-in-out;
 }
 
 li :hover {
-  transform: rotate(30deg);
   color: #6070ff;
-}
-
-.get-resume {
-  width: 200px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  border-radius: 8px;
-  color: #396df2;
-  padding: 10px;
-  margin-bottom: 10px;
 }
 
 /* Work-Station Section */
@@ -189,4 +177,80 @@ button {
 button:hover {
   color: #eef1f8;
   background-color: #344563;
+}
+
+/*About Section*/
+.get-resume {
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+  color: #396df2;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.skills-lang {
+  display: flex;
+  flex-direction: column; 
+}
+
+#languages {
+  width: 25%;
+}
+
+.languages {
+  height: 72px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.lang-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-lang {
+  display: flex;
+  align-items: center;
+  background: #F7F7F9;
+  gap: 4px;
+  width: 303px;
+  height: 66.72px;
+}
+
+.lang {
+  text-decoration: none;
+}
+
+.framework-skills {
+  text-decoration: none;
+}
+
+.framework,
+.skills {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.framework-skills{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 50px;
+}
+
+hr {
+  height: 1px;
+  background: #DFE1E6;
+  margin: 3px;
 }
