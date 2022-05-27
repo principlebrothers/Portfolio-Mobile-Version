@@ -9,17 +9,22 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 15px;
+  padding: 16px;
+  margin: 0;
   min-width: 375px;
   min-height: 718px;
+  background-color:  #e5e5e5;
 }
 
 .head-section {
   background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
-  background-position: center;
   background-position: 10px 10px;
+  background-color: #ffffff;
   padding: 10px;
+  border-radius: 16px;
+  margin-bottom: 114px;
+  height: 718px;
 }
 
 header {
@@ -46,6 +51,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .intro {
@@ -53,7 +59,8 @@ main {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
+  width: 327px;
 }
 
 .main-paragraph {
@@ -69,6 +76,7 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+  margin-top: 12px;
 }
 
 .headline-section ul {
@@ -89,10 +97,12 @@ li :hover {
 /* Work-Station Section */
 .work-section {
   display: grid;
-  grid-template-columns: 100%;
-  grid-row-gap: 15px;
-  background-color: rgba(0, 0, 0, 0.01);
-  margin-bottom: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 718px;
+  grid-row-gap: 88px;
+  background-color: #ffffff;
+  margin-bottom: 114px;
 }
 
 .padding {
@@ -109,6 +119,16 @@ h2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+}
+
+.tonic-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 236px;
+  height: 32px;
+  gap: 12px;
+  padding: 0;
 }
 
 .canopy {
@@ -156,6 +176,10 @@ h2 {
   padding-left: 0;
 }
 
+.lang-list {
+  background: #ebebff;
+}
+
 .programing-languages a {
   text-decoration: none;
   background: #e5e5fa;
@@ -163,14 +187,14 @@ h2 {
 
 button {
   width: 100px;
-  height: 50px;
+  height: 48px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   border-radius: 8px;
-  color: #396df2;
-  border: 1.5px solid #396df2;
-  padding: 10px;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  padding: 12px;
   transition: 0.3s button ease-in-out;
 }
 
@@ -180,21 +204,28 @@ button:hover {
 }
 
 /* About Section */
+.about {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 16px;
+}
+
 .get-resume {
-  width: 200px;
-  height: 50px;
+  width: 140px;
+  height: 48px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 24px;
   border-radius: 8px;
   color: #396df2;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
 }
 
 .skills-lang {
   display: flex;
   flex-direction: column;
+  color: #253858;
 }
 
 #languages {
@@ -203,7 +234,7 @@ button:hover {
 
 .languages {
   height: 72px;
-  padding: 5px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -214,6 +245,7 @@ button:hover {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #000000;
 }
 
 .about-lang {
@@ -236,6 +268,7 @@ button:hover {
   align-items: center;
   width: 327px;
   height: 50px;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .framework,
@@ -244,4 +277,5 @@ button:hover {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #000000;
 }
