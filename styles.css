@@ -97,7 +97,7 @@ li :hover {
 .work-section {
   display: grid;
   grid-template-columns: minmax(327px, 100%);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-auto-rows: 718px;
   grid-row-gap: 88px;
   margin: 0 24px 88px;
@@ -175,6 +175,7 @@ h2 {
   display: flex;
   gap: 20px;
   padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .programing-languages a {
