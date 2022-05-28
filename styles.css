@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  padding: 16px;
   margin: 0;
   min-width: 375px;
   min-height: 718px;
@@ -21,8 +20,8 @@ body {
   background-repeat: no-repeat;
   background-position: 10px 10px;
   background-color: #fff;
-  padding: 10px;
-  border-radius: 16px;
+  padding: 15px;
+  border-bottom-left-radius: 55px;
   margin-bottom: 114px;
   height: 718px;
 }
@@ -97,21 +96,23 @@ li :hover {
 /* Work-Station Section */
 .work-section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(327px, 100%);
   grid-template-rows: repeat(3, 1fr);
   grid-auto-rows: 718px;
   grid-row-gap: 88px;
-  background-color: #fff;
-  margin-bottom: 114px;
+  margin: 0 24px 88px;
 }
 
 .padding {
   padding: 10px;
+  background-color: #fff;
+  border-radius: 16px;
 }
 
 .frontpage-icon {
   width: 295px;
   height: 220px;
+  margin: 0 auto 0 auto;
 }
 
 h2 {
@@ -176,13 +177,11 @@ h2 {
   padding-left: 0;
 }
 
-.lang-list {
-  background: #ebebff;
-}
-
 .programing-languages a {
   text-decoration: none;
-  background: #e5e5fa;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px 4px 12px;
 }
 
 button {
@@ -194,18 +193,23 @@ button {
   border-radius: 8px;
   color: #6070ff;
   border: 1px solid #6070ff;
+  background: #fff;
   padding: 12px;
-  transition: 0.3s button ease-in-out;
 }
 
 button:hover {
   color: #eef1f8;
-  background-color: #344563;
+  background-color: #457ad4;
+}
+
+button:active {
+  background-color: #0243b3;
 }
 
 /* About Section */
 .about {
   background-color: #fff;
+  border-top-right-radius: 55px;
   margin: 0;
   padding: 16px;
 }
@@ -225,11 +229,10 @@ button:hover {
 .skills-lang {
   display: flex;
   flex-direction: column;
-  color: #253858;
 }
 
 #languages {
-  width: 25%;
+  padding: 0;
 }
 
 .languages {
@@ -238,6 +241,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 303px;
   text-decoration: none;
 }
 
@@ -252,13 +256,17 @@ button:hover {
   display: flex;
   align-items: center;
   background: #f7f7f9;
-  gap: 4px;
-  width: 303px;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  width: 338px;
   height: 66.72px;
 }
 
 .lang {
   text-decoration: none;
+  color: #253858;
 }
 
 .framework-skills {
@@ -266,9 +274,10 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 327px;
+  width: 303px;
   height: 50px;
   border-bottom: 1px solid #dfe1e6;
+  padding: 8px;
 }
 
 .framework,
