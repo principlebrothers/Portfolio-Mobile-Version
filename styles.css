@@ -196,6 +196,7 @@ button {
   border: 1px solid #6070ff;
   background: #fff;
   padding: 12px;
+  margin-bottom: 24px;
 }
 
 button:hover {
