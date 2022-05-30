@@ -172,7 +172,9 @@ h2 {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  display: flex;
+  float: left;
+  clear: right;
+  text-align: center;
   gap: 20px;
   padding-left: 0;
   margin-bottom: 30px;
