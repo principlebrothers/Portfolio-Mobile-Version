@@ -175,6 +175,7 @@ h2 {
   letter-spacing: 0.03em;
   padding: 0px;
   float: left;
+  position: relative;
 }
 
 .programing-languages a {
@@ -186,10 +187,10 @@ h2 {
 
 .lang-padding {
   padding: 7px;
+  display: inline-block;
 }
 
 button {
-  clear: both;
   width: 100px;
   height: 48px;
   font-weight: 500;
