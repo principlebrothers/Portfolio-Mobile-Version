@@ -164,10 +164,7 @@ h2 {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.languages-layout {
-  display: block;
+  float: left;
 }
 
 .programing-languages {
@@ -176,13 +173,8 @@ h2 {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  float: left;
-  display: inline-block;
   padding: 0px;
-  clear: right;
-  text-align: center;
-  width: 150px;
-  height: 80px;
+  float: left;
 }
 
 .programing-languages a {
@@ -192,7 +184,12 @@ h2 {
   padding: 4px 12px 4px 12px;
 }
 
+.lang-padding {
+  padding: 7px;
+}
+
 button {
+  clear: both;
   width: 100px;
   height: 48px;
   font-weight: 500;
@@ -204,7 +201,6 @@ button {
   background: #fff;
   padding: 12px;
   margin-bottom: 24px;
-  
 }
 
 button:hover {
