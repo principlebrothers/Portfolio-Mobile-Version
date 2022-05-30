@@ -166,6 +166,10 @@ h2 {
   line-height: 24px;
 }
 
+.languages-layout {
+  display: block;
+}
+
 .programing-languages {
   color: #6070ff;
   font-weight: 500;
@@ -173,11 +177,12 @@ h2 {
   line-height: 16px;
   letter-spacing: 0.03em;
   float: left;
+  display: inline-block;
+  padding: 0px;
   clear: right;
   text-align: center;
-  gap: 20px;
-  padding-left: 0;
-  margin-bottom: 30px;
+  width: 150px;
+  height: 80px;
 }
 
 .programing-languages a {
@@ -199,6 +204,7 @@ button {
   background: #fff;
   padding: 12px;
   margin-bottom: 24px;
+  
 }
 
 button:hover {
