@@ -290,3 +290,55 @@ button:active {
   line-height: 24px;
   color: #000;
 }
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  background-color:#6070ff;
+  border-top-left-radius: 45px;
+  width: 375px;
+  height: 779px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contact-form h1 {
+  color: white;
+  font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+}
+
+.contact-form p {
+  text-align:center;
+  padding: 0px 20px;
+  font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+  color: #EBEBFF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 24px;
+}
+
+form input {
+  height: 48px;
+  border: 1px solid #CFD8DC;
+border-radius: 8px;
+}
+
+form textarea {
+  height: 170px;
+  border: 1px solid #CFD8DC;
+border-radius: 8px;
+}
