@@ -199,15 +199,6 @@ button {
   margin-bottom: 24px;
 }
 
-button:hover {
-  color: #eef1f8;
-  background-color: #457ad4;
-}
-
-button:active {
-  background-color: #0243b3;
-}
-
 /* About Section */
 .about {
   background-color: #fff;
@@ -291,13 +282,14 @@ button:active {
   color: #000;
 }
 
+/* Contact section */
 .contact-section {
   display: flex;
   flex-direction: column;
   border-top-left-radius: 60px;
-  width: 375px;
-  height: 779px;
-  background:#6070ff;
+  min-width: 375px;
+  min-height: 779px;
+  background: #6070ff;
 }
 
 .contact-background {
@@ -315,34 +307,34 @@ button:active {
 .contact-form h1 {
   color: white;
   font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-margin-top: 103px;
- margin-bottom: 0px;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 103px;
+  margin-bottom: 0;
 }
 
 .contact-form p {
-  text-align:center;
-  padding: 0px 20px;
+  text-align: center;
+  padding: 0 20px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   margin-top: 10px;
-  color: #EBEBFF;
+  color: #ebebff;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 
 form input {
   font-size: 17px;
   line-height: 20px;
   height: 48px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
@@ -350,26 +342,36 @@ form textarea {
   font-size: 15px;
   line-height: 24px;
   height: 170px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
 form button {
-width: 140px;
-height: 48px;
-background: #fff;
-border-radius: 8px;
-font-size: 17px;
-line-height: 24px;
-color: #6070ff;
-margin-bottom: 5px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  margin-bottom: 5px;
 }
 
 hr {
   height: 5px;
-  background: #0D151E;
-  border: 1px solid #0D151E;
+  background: #0d151e;
+  border: 1px solid #0d151e;
   border-radius: 10px;
   width: 134px;
-  margin-top: 0px;
+  margin-top: 0;
+}
+
+/* button hover over all button */
+button:hover {
+  color: #eef1f8;
+  background-color: #457ad4;
+}
+
+button:active {
+  background-color: #0243b3;
 }
