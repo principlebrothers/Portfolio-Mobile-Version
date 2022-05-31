@@ -300,6 +300,10 @@ button:active {
   background:#6070ff;
 }
 
+.contact-background {
+  background: url(./images/top-right.png) 100% 10% no-repeat, url(./images/Top-right-Rectangle.png) 100% 6% no-repeat, url(./images/top-middle-ellipse.png) 45% 10% no-repeat, url(./images/buttom-ellipse.png) 74% 96% no-repeat, url(./images/buttom-rectangle.png) 83% 95% no-repeat;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
