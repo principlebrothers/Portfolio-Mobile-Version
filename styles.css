@@ -406,10 +406,30 @@ button:active {
 }
 
 @media (min-width: 48rem) {
+  main {
+    padding: 0 260px;
+  }
+
+  .main-paragraph {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .headline-section ul {
+    padding: 0 260px;
+  }
+
+  .intro {
+    font-size: 48px;
+    width: 400px;
+  }
   .padding {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 496px;
+    width: 1156px;
+    margin: 0 auto;
   }
 
   .padding.multi-post-availability {
@@ -438,6 +458,7 @@ button:active {
 
   .skills-lang {
     margin-top: 80px;
+    width: 684px;
   }
 
   .about-lang-wrapper {
