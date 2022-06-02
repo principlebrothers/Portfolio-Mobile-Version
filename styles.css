@@ -15,7 +15,7 @@ body {
 }
 
 .head-section {
-  background: url(./images/Ellipse\ 3.png) 100% 20% no-repeat, url(./images/Top-right-Rectangle.png) 100% 15% no-repeat, url(./images/Top-right-Rectangle.png) 45% 13% no-repeat, url(./images/buttom-ellipse.png) 74% 96% no-repeat, url(./images/buttom-rectangle.png) 83% 95% no-repeat;
+  background: url(./images/Ellipse\ 3.png) 100% 20% no-repeat, url(./images/Top-right-Rectangle.png) 100% 15% no-repeat, url(./images/Ellipse\ 12.png) no-repeat 5% 15%, url(./images/Top-right-Rectangle.png) 45% 13% no-repeat, url(./images/Ellipse\ 4.png) 65% 86% no-repeat, url(./images/buttom-rectangle.png) 63% 90% no-repeat;
   background-color: #fff;
   padding: 15px;
   border-bottom-left-radius: 55px;
