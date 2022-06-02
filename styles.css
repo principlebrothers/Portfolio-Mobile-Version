@@ -388,7 +388,7 @@ button:active {
   background-color: #0243b3;
 }
 
-/*Media Query for mobile-device*/
+/* Media Query for mobile-device */
 @media (max-width: 375px) {
   #metaMenu {
     display: block;
@@ -408,7 +408,7 @@ button:active {
     gap: 10px;
   }
 
-/* About section */
+  /* About section */
   .about {
     display: flex;
     gap: 37px;
@@ -423,7 +423,7 @@ button:active {
     margin-right: 50px;
     padding: 10px;
   }
-  
+
   .skills-lang {
     margin-top: 80px;
   }
@@ -440,11 +440,11 @@ button:active {
     padding: 1.4em;
   }
 
-/* Contact section */
+  /* Contact section */
   .contact-form p {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 50px
+    padding: 0 50px;
   }
 
   form {
