@@ -242,7 +242,6 @@ button {
 
 .languages {
   height: 72px;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,7 +252,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #344563;
 }
 
 .about-lang {
@@ -267,9 +266,15 @@ button {
   min-height: 66.72px;
 }
 
+.about-lang img {
+  margin-right: 5px;
+}
+
 .lang {
   text-decoration: none;
   color: #253858;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .framework-skills {
@@ -288,7 +293,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #344563;
 }
 
 /* Contact section */
