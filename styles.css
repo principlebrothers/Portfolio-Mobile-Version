@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
+*,
 *::before,
 *::after {
   margin: 0;
@@ -10,15 +11,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  min-width: 375px;
-  min-height: 718px;
   background-color: #e5e5e5;
 }
 
 .head-section {
-  background-image: url('./images/header-shapes\ mobile.png');
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background: url(./images/top-right.png) 100% 10% no-repeat, url(./images/Top-right-Rectangle.png) 100% 6% no-repeat, url(./images/top-middle-ellipse.png) 45% 10% no-repeat, url(./images/buttom-ellipse.png) 74% 96% no-repeat, url(./images/buttom-rectangle.png) 83% 95% no-repeat;
   background-color: #fff;
   padding: 15px;
   border-bottom-left-radius: 55px;
@@ -32,6 +29,7 @@ header {
   padding: 0 10px 10px 10px;
   align-items: center;
   margin: 0 15px;
+  margin-top: 2rem;
 }
 
 .a_logo {
@@ -42,9 +40,24 @@ header {
   text-decoration: none;
 }
 
-.menu-icon {
-  color: #6070ff;
-  padding: 10px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links {
+  display: block;
+  text-decoration: none;
+  height: auto;
+  color: #344563;
+}
+
+#metaMenu {
+  display: none;
+  text-decoration: none;
+  padding: 5px;
 }
 
 main {
@@ -60,6 +73,7 @@ main {
   line-height: 52px;
   margin-bottom: 12px;
   width: 327px;
+  margin-top: 5rem;
 }
 
 .main-paragraph {
@@ -82,6 +96,7 @@ main {
   display: flex;
   padding: 0;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 li {
@@ -176,6 +191,7 @@ h2 {
   gap: 20px;
   padding-left: 0;
   margin-bottom: 30px;
+  margin-top: 1.5rem;
 }
 
 .programing-languages a {
@@ -217,15 +233,12 @@ button {
   color: #396df2;
   padding: 5px;
   margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .skills-lang {
   display: flex;
   flex-direction: column;
-}
-
-#languages {
-  padding: 0;
 }
 
 .languages {
@@ -234,7 +247,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 303px;
   text-decoration: none;
 }
 
@@ -253,8 +265,7 @@ button {
   margin-top: 12px;
   margin-bottom: 12px;
   padding-left: 12px;
-  width: 338px;
-  height: 66.72px;
+  min-height: 66.72px;
 }
 
 .lang {
@@ -267,9 +278,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 303px;
-  height: 50px;
-  border-bottom: 1px solid #dfe1e6;
+  min-height: 50px;
+  border-bottom: 1px solid#dfe1e6;
   padding: 8px;
 }
 
@@ -336,14 +346,16 @@ form input {
   height: 48px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  padding: 10px;
 }
 
 form textarea {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   height: 170px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  padding: 10px;
 }
 
 form button {
@@ -354,7 +366,7 @@ form button {
   font-size: 17px;
   line-height: 24px;
   color: #6070ff;
-  margin-bottom: 5px;
+  margin-bottom: 114px;
 }
 
 hr {
@@ -363,7 +375,7 @@ hr {
   border: 1px solid #0d151e;
   border-radius: 10px;
   width: 134px;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 /* button hover over all button */
@@ -374,4 +386,74 @@ button:hover {
 
 button:active {
   background-color: #0243b3;
+}
+
+/*Media Query for mobile-device*/
+@media (max-width: 375px) {
+  #metaMenu {
+    display: block;
+    color: #6070ff;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .padding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+/* About section */
+  .about {
+    display: flex;
+    gap: 37px;
+  }
+
+  .about-wrapper {
+    margin-left: 142px;
+    max-width: 28em;
+  }
+
+  .tonic-wrapper {
+    margin-right: 50px;
+    padding: 10px;
+  }
+  
+  .skills-lang {
+    margin-top: 80px;
+  }
+
+  .about-lang-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .about-lang {
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em;
+  }
+
+/* Contact section */
+  .contact-form p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 50px
+  }
+
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  form button {
+    margin: 0 auto;
+    margin-bottom: 140px;
+  }
 }
