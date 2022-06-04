@@ -212,6 +212,7 @@ button {
   background: #fff;
   padding: 12px;
   margin-bottom: 24px;
+  box-shadow: 0 7px 5px #999;
 }
 
 /* About Section */
@@ -233,6 +234,7 @@ button {
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 16px;
+  box-shadow: 0 6px 4px #999;
 }
 
 .skills-lang {
@@ -390,6 +392,8 @@ button:hover {
 
 button:active {
   background-color: #0243b3;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
 .tonic-frontpage {
