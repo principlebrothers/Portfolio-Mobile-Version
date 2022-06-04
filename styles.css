@@ -120,8 +120,8 @@ li {
 }
 
 .mail:hover {
-  border: 3px dotted #34A853;
-  background-color: #f5F8fa;
+  border: 3px dotted #34a853;
+  background-color: #f5f8fa;
   color: white;
   padding: 8px;
   border-radius: 50px;
@@ -129,7 +129,7 @@ li {
 
 .github:hover {
   border: 3px dotted #6e5494;
-  background-color: #f5F8fa;
+  background-color: #f5f8fa;
   color: white;
   padding: 8px;
   border-radius: 50px;
@@ -137,12 +137,11 @@ li {
 
 .peace:hover {
   border: 3px dotted #c9510c;
-  background-color: #f5F8fa;
+  background-color: #f5f8fa;
   color: white;
   padding: 8px;
   border-radius: 50px;
 }
-
 
 /* Work-Station Section */
 .work-section {
