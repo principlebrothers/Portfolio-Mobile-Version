@@ -392,6 +392,53 @@ button:active {
   background-color: #0243b3;
 }
 
+.tonic-frontpage {
+  position: relative;
+  animation: ease-in;
+  animation-iteration-count: 1;
+  animation-name: change;
+  animation-duration: 15s;
+}
+
+.multi-post-availability {
+  position: relative;
+  bottom: 15%;
+  animation: ease-in;
+  animation-iteration-count: 1;
+  animation-name: change;
+  animation-duration: 15s;
+}
+
+.Gymfit {
+  position: relative;
+  bottom: 30%;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-name: change;
+  animation-duration: 15s;
+}
+
+.professional {
+  position: relative;
+  bottom: 50%;
+  animation: ease-in;
+  animation-iteration-count: 1;
+  animation-name: change;
+  animation-duration: 15s;
+}
+
+@keyframes change {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%; 
+ }
+}
+
 /* Media Query for mobile-device */
 @media (max-width: 768px) {
   #metaMenu {
