@@ -103,23 +103,23 @@ li {
   list-style-type: none;
 }
 
-.twiter:hover{
+.twiter:hover {
   border: 3px dotted #1da1f2;
-  background-color: #f5F8fa;
+  background-color: #f5f8fa;
   color: white;
   padding: 8px;
   border-radius: 50px;
 }
 
-.linkendIn:hover{
+.linkendIn:hover {
   border: 3px dotted #0077b5;
-  background-color: #f5F8fa;
+  background-color: #f5f8fa;
   color: white;
   padding: 8px;
   border-radius: 50px;
 }
 
-.mail:hover{
+.mail:hover {
   border: 3px dotted #34A853;
   background-color: #f5F8fa;
   color: white;
@@ -127,7 +127,7 @@ li {
   border-radius: 50px;
 }
 
-.github:hover{
+.github:hover {
   border: 3px dotted #6e5494;
   background-color: #f5F8fa;
   color: white;
@@ -135,7 +135,7 @@ li {
   border-radius: 50px;
 }
 
-.peace:hover{
+.peace:hover {
   border: 3px dotted #c9510c;
   background-color: #f5F8fa;
   color: white;
@@ -475,12 +475,14 @@ button:active {
   0% {
     left: 0;
   }
+
   50% {
     left: 100%;
   }
+
   100% {
-    left: -100%; 
- }
+    left: -100%;
+  }
 }
 
 /* Media Query for mobile-device */
