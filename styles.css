@@ -103,6 +103,47 @@ li {
   list-style-type: none;
 }
 
+.twiter:hover{
+  border: 3px dotted #1da1f2;
+  background-color: #f5F8fa;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.linkendIn:hover{
+  border: 3px dotted #0077b5;
+  background-color: #f5F8fa;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.mail:hover{
+  border: 3px dotted #34A853;
+  background-color: #f5F8fa;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.github:hover{
+  border: 3px dotted #6e5494;
+  background-color: #f5F8fa;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.peace:hover{
+  border: 3px dotted #c9510c;
+  background-color: #f5F8fa;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+
 /* Work-Station Section */
 .work-section {
   display: grid;
@@ -212,7 +253,7 @@ button {
   background: #fff;
   padding: 12px;
   margin-bottom: 24px;
-  box-shadow: 0 7px 5px #999;
+  box-shadow: 0 6px #999;
 }
 
 /* About Section */
@@ -234,7 +275,7 @@ button {
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 16px;
-  box-shadow: 0 6px 4px #999;
+  box-shadow: 0 6px 2px #999;
 }
 
 .skills-lang {
