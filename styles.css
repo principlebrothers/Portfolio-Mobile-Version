@@ -402,16 +402,15 @@ button:active {
 
 .multi-post-availability {
   position: relative;
-  bottom: 15%;
   animation: ease-in;
   animation-iteration-count: 1;
   animation-name: change;
   animation-duration: 15s;
+  animation-delay: 8s;
 }
 
 .Gymfit {
   position: relative;
-  bottom: 30%;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-name: change;
@@ -420,11 +419,11 @@ button:active {
 
 .professional {
   position: relative;
-  bottom: 50%;
   animation: ease-in;
   animation-iteration-count: 1;
   animation-name: change;
   animation-duration: 15s;
+  animation-delay: 8s;
 }
 
 @keyframes change {
