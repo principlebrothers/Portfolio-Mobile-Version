@@ -282,6 +282,14 @@ button {
   flex-direction: column;
 }
 
+.skills-lang img {
+  transition: all 1s;
+}
+
+.skills-lang img:hover {
+  transform: rotate(360deg);
+}
+
 .languages {
   height: 72px;
   display: flex;
