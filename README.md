@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Portfolio-Mobile-Version
+# Project Name: Portfolio
 
-> Description the project: Designing the mobile version landing page of my portfolio using Flexbox and Figma.
+> Description the project: Designing my portfolio using Flexbox, Grid and Figma template.
 
 
 
