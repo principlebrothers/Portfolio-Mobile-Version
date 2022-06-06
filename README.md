@@ -14,8 +14,7 @@
 - GitHub: [@principlebrothers](https://github.com/principlebrothers)
 - Twitter: [@adonu_ernest](https://twitter.com/adonu_ernest)
 - LinkedIn: [Ernest Anyewe Adonu](www.linkedin.com/in/ernest-adonu-7b61951b0)
-- Portfolio website: [Ernest Porfolio](https://principlebrothers.github.io/Portfolio-Mobile-Version/)
-
+- Portfolio-Website: [Ernest Portfolio](https://principlebrothers.github.io/Portfolio-Mobile-Version/)
 
 ## 🤝 Contributing
 
