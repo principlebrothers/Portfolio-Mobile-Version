@@ -282,6 +282,10 @@ button {
   flex-direction: column;
 }
 
+.about-lang img {
+  margin-right: 5px;
+}
+
 .skills-lang img {
   transition: all 1s;
 }
@@ -314,10 +318,6 @@ button {
   margin-bottom: 12px;
   padding-left: 12px;
   min-height: 66.72px;
-}
-
-.about-lang img {
-  margin-right: 5px;
 }
 
 .lang {
