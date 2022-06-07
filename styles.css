@@ -95,6 +95,7 @@ main {
   padding: 0;
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 114px;
 }
 
 li {
@@ -173,7 +174,6 @@ h2 {
 .tonic-section-header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   height: 32px;
   gap: 12px;
   padding: 0;
@@ -259,8 +259,6 @@ button {
 }
 
 .get-resume {
-  width: 140px;
-  height: 48px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -409,7 +407,6 @@ form textarea {
 
 form button {
   width: 140px;
-  height: 48px;
   background: #fff;
   border-radius: 8px;
   font-size: 17px;

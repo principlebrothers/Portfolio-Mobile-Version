@@ -35,6 +35,11 @@ https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479c
 
 > Remove width and height on all button on the page
 https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479cb4ff761661d4335784552266054/styles.css#L244-L245
+https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479cb4ff761661d4335784552266054/styles.css#L267-L268
+https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479cb4ff761661d4335784552266054/styles.css#L417
+
+> Remove justify-content:space-around
+https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479cb4ff761661d4335784552266054/styles.css#L178
 
 ## Interaction
 >
