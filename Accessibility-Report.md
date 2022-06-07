@@ -42,9 +42,13 @@ https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479c
 https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/06527e4c1479cb4ff761661d4335784552266054/styles.css#L178
 
 ## Interaction
->
+> No issues found
+
 ## Moving content
+> No issues found
 
 ## Multimedia
+> No issues found
 
 ## The basic structure of the page
+> No issues found
