@@ -20,7 +20,6 @@ body {
   padding: 15px;
   border-bottom-left-radius: 55px;
   margin-bottom: 114px;
-  height: 718px;
 }
 
 header {
@@ -33,7 +32,7 @@ header {
 }
 
 .a_logo {
-  color: #6070ff;
+  color: #3a48cb;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -72,7 +71,6 @@ main {
   font-weight: 700;
   line-height: 52px;
   margin-bottom: 12px;
-  width: 327px;
   margin-top: 5rem;
 }
 
@@ -85,7 +83,7 @@ main {
 }
 
 .connect {
-  color: #7f8cff;
+  color: #1a30ff;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -176,7 +174,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 236px;
   height: 32px;
   gap: 12px;
   padding: 0;
@@ -196,14 +193,14 @@ h2 {
 }
 
 .back-end-dev {
-  color: #7a869a;
+  color: #345489;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
 .year {
-  color: #7a869a;
+  color: #345489;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -227,7 +224,7 @@ h2 {
 }
 
 .programing-languages a {
-  color: #6070ff;
+  color: #3a48cb;
   font-weight: 500;
   font-size: 12px;
   text-decoration: none;
@@ -241,14 +238,12 @@ h2 {
 }
 
 button {
-  width: 100px;
-  height: 48px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   border-radius: 8px;
-  color: #6070ff;
-  border: 1px solid #6070ff;
+  color: #3a48cb;
+  border: 1px solid #3a48cb;
   background: #fff;
   padding: 12px;
   margin-bottom: 24px;
@@ -353,7 +348,7 @@ button {
   border-top-left-radius: 60px;
   min-width: 375px;
   min-height: 779px;
-  background: #6070ff;
+  background: #3a48cb;
 }
 
 .contact-background {
@@ -419,7 +414,7 @@ form button {
   border-radius: 8px;
   font-size: 17px;
   line-height: 24px;
-  color: #6070ff;
+  color: #3a48cb;
   margin-bottom: 114px;
 }
 
@@ -496,7 +491,7 @@ button:active {
 @media (max-width: 768px) {
   #metaMenu {
     display: block;
-    color: #6070ff;
+    color: #3a48cb;
   }
 
   .nav-links {
