@@ -17,9 +17,9 @@
                 <a class="a_logo" href="#">My Logo</a>
             </div>
             <nav>
-                <a class="nav-links" href="#">Portfolio</a>
-                <a class="nav-links" href="#">About</a>
-                <a class="nav-links" href="#">Contact</a>
+                <a class="nav-links" href="#portfolio">Portfolio</a>
+                <a class="nav-links" href="#about">About</a>
+                <a class="nav-links" href="#contact">Contact</a>
                 <a id="metaMenu" href="#">&#9776;</a>
             </nav>
         </header>
@@ -65,7 +65,7 @@
     </div>
 
     <!--Work Section-->
-    <section class="work-section">
+    <section class="work-section" id="portfolio">
         <div class="tonic-frontpage padding">
             <div class="frontpage-icon">
                 <img src="./images/Snapshoot-Portfolio.png" alt="Portfolio" width="295" height="220">
@@ -184,7 +184,7 @@
     </section>
 
     <!--About Section-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-wrapper">
             <div class="about-me">
                 <h3 class="intro">About <br>Myself</h3>
@@ -266,7 +266,7 @@
     </section>
 
     <!--Contact Section-->
-    <footer class="contact-section">
+    <footer class="contact-section" id="contact">
         <div class="contact-background">
             <div class="content-wrapper">
                 <div class="contact-form">
@@ -280,7 +280,7 @@
                     <input type="text" name="name" maxlength="30" id="name" required
                         placeholder="Enter your full name" />
                     <input type="email" name="email" maxlength="30" id="email" required placeholder="name@domain.com" />
-                    <textarea maxlength="500" placeholder="Write your message here" name="message"></textarea>
+                    <textarea maxlength="500" placeholder="Write your message here" name="message" required></textarea>
                     <button type="submit">Get in Touch</button>
                 </form>
             </div>
