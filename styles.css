@@ -424,13 +424,15 @@ hr {
   margin: 0 auto;
 }
 
-/* Moibile-Menu*/
+/* Moibile-Menu */
 .mobile-menu {
   background-color: rgba(58, 72, 203, 0.87);
   width: 100%;
   position: absolute;
-  top: 0px;
   display: none;
+  top: 0;
+  backdrop-filter: blur(3px);
+  transition: 3s all ease-in-out;
 }
 
 .closed-btn {
@@ -447,7 +449,10 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 12px 525px 24px;
+  padding-top: 16px;
+  padding-right: 12px;
+  padding-left: 24px;
+  margin-bottom: 100%;
 }
 
 .in-text-link {
@@ -461,7 +466,7 @@ hr {
 
 .mobile-menu hr {
   position: relative;
-  bottom: 120px;
+  margin-bottom: 13px;
 }
 
 /* button hover over all button */
