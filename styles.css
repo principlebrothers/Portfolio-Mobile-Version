@@ -145,11 +145,28 @@ li {
 /*
 ################### Pop-up Section #################
 */
+.Pop-up {
+  display: none;
+}
 .popup-container {
   background-color: #fff;
   margin: 60px 16px 37px 16px;
   border-radius: 16px;
   padding: 16px;
+  position: relative;
+}
+
+.tonic a {
+  color: #17569e;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  right: 20px;
+  top: -50px;
+}
+
+.text-btn-container .desktop {
+  display: none;
 }
 
 .popup-portfolio-image {
@@ -179,7 +196,8 @@ li {
 
 .popup-btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .popup-btn .live {
@@ -619,6 +637,49 @@ button:active {
     margin: 0 auto;
   }
 
+  /* Pop-up Window */
+  .Pop-up {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+
+  .popup-portfolio-image {
+    margin-bottom: 59px;
+  }
+
+  .text-btn-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-paragraph {
+    Height: 382px;
+  }
+
+  .text-btn-container .mobile {
+    display: none;
+  }
+
+  .text-btn-container .desktop {
+    display: flex;
+  }
+
+  .popup-languages {
+    flex-wrap: wrap;
+  }
+
+  .popup-languages .desktop {
+    display: flex;
+    text-decoration: none;
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px 4px 12px;
+  }
+
+  /* Work-Section */
   .padding.multi-post-availability {
     flex-direction: row-reverse;
   }

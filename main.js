@@ -24,6 +24,10 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 // ================================================================================================================
 //                                                 WORK SECTION (POPUP-WINDOW)
 // ================================================================================================================
+const workSection = document.querySelector('.work-section');
+const popUpWindow = document.querySelector('#popUp');
+const popUpButton = document.querySelector('.Pop-up');
+
 const projects = [
   {
     class: "tonic-frontpage padding",
@@ -73,8 +77,6 @@ const projects = [
   }
 ];
 
-const workSection = document.querySelector('.work-section');
-
 for (let i = 0; i < projects.length; i+=1) {
   const project = projects[i];
 
@@ -104,3 +106,7 @@ for (let i = 0; i < projects.length; i+=1) {
   </div>
 </div>`;
 }
+
+popUpButton.addEventListener('click', () => {
+  popUpWindow.style.display = 'block';
+})
