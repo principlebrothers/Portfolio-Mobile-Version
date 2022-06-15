@@ -25,8 +25,7 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 //                                                 WORK SECTION (POPUP-WINDOW)
 // ================================================================================================================
 const workSection = document.querySelector('.work-section');
-const popUpWindow = document.querySelector('#popUp');
-const popUpButton = document.querySelector('.Pop-up');
+const popUpClosedButton = document.querySelector('#closed-Btn');
 
 const projects = [
   {
@@ -34,7 +33,7 @@ const projects = [
     name: 'Tonic',
     image: './images/Snapshoot-Portfolio.png',
     alt: 'portfolio',
-    width: "295", 
+    width: "295",
     height: "220",
     canopy: ['CANOPY', 'BackEndDev', '2022'],
     description: 'A daily selection of privately personalized reads: no accounts or sign-ups required',
@@ -77,7 +76,8 @@ const projects = [
   }
 ];
 
-for (let i = 0; i < projects.length; i+=1) {
+let len = projects.length;
+for (let i = 0; i < len; i += 1) {
   const project = projects[i];
 
   workSection.innerHTML += ` <div class="${project.class}">
@@ -107,6 +107,31 @@ for (let i = 0; i < projects.length; i+=1) {
 </div>`;
 }
 
-popUpButton.addEventListener('click', () => {
-  popUpWindow.style.display = 'block';
+const popUpWindow = document.querySelector('#popUp');
+const popUpButton = document.querySelectorAll('.popup');
+const overLay = document.getElementById("overlay");
+const liveButton = document.querySelector('.live');
+const sourceButton = document.querySelector('.source');
+
+for (let i = 0; i < popUpButton.length; i += 1) {
+  const btnSelected = popUpButton[i];
+  btnSelected.addEventListener('click', () => {
+    popUpWindow.style.display = 'block';
+    overLay.classList.add('active');
+    overLay.style.display = 'block';
+  })
+}
+
+popUpClosedButton.addEventListener('click', () => {
+  popUpWindow.style.display = 'none';
+  overlay.classList.remove('active');
+  overLay.style.display = 'none';
+})
+
+liveButton.addEventListener('click', () => {
+  window.open(projects[0].liveBtn, '_blank')
+})
+
+sourceButton.addEventListener('click', () => {
+  window.open(projects[0].sourceBtn);
 })

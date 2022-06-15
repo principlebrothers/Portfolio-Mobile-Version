@@ -147,7 +147,11 @@ li {
 */
 .Pop-up {
   display: none;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
+
 .popup-container {
   background-color: #fff;
   margin: 60px 16px 37px 16px;
@@ -156,13 +160,14 @@ li {
   position: relative;
 }
 
-.tonic a {
+.tonic #closed-Btn {
   color: #17569e;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
   position: absolute;
-  right: 20px;
-  top: -50px;
+  right: 30px;
+  top: 10px;
+  text-decoration: none;
 }
 
 .text-btn-container .desktop {
@@ -329,7 +334,7 @@ button {
   line-height: 24px;
   border-radius: 8px;
   color: #396df2;
-  padding: 5px;
+  padding: 12px;
   margin-bottom: 10px;
   margin-top: 16px;
   box-shadow: 0 6px 2px #999;
@@ -534,6 +539,21 @@ hr {
   margin-bottom: 13px;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#overlay .active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /* button hover over all button */
 button:hover {
   color: #eef1f8;
@@ -608,7 +628,7 @@ button:active {
   }
 }
 
-/* Media-query for Desktop Device*/
+/* Media-query for Desktop Device */
 @media (min-width: 48rem) {
   main {
     padding: 0 260px;
@@ -621,6 +641,10 @@ button:active {
 
   .headline-section ul {
     padding: 0 260px;
+  }
+
+  .about .headline-section ul {
+    padding: 0;
   }
 
   .intro {
@@ -640,8 +664,11 @@ button:active {
   /* Pop-up Window */
   .Pop-up {
     display: none;
+    position: sticky;
+    top: 0;
+    z-index: 20;
   }
-  
+
   h2 {
     font-size: 40px;
   }
@@ -655,8 +682,8 @@ button:active {
     justify-content: space-between;
   }
 
-  .main-paragraph {
-    Height: 382px;
+  .Pop-up .main-paragraph {
+    max-width: 70%;
   }
 
   .text-btn-container .mobile {
