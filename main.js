@@ -122,7 +122,7 @@ const popUpTonicDiv = document.querySelector('#specialPopUp');
 function popImageChange(selectedBtn) {
   for (let i = 0; i < len; i += 1) {
     let project = projects[i];
-    
+
     if (project.id === selectedBtn) {
       popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
     }
@@ -153,7 +153,7 @@ for (let i = 0; i < popUpButton.length; i += 1) {
       overLay.style.display = 'block';
       popImageChange(Number(btnSelected.id));
     }
-    else if (Number(btnSelected.id)=== 3) {
+    else if (Number(btnSelected.id) === 3) {
       popUpWindow.style.display = 'block';
       overLay.classList.add('active');
       overLay.style.display = 'block';
@@ -183,3 +183,32 @@ liveButton.addEventListener('click', () => {
 sourceButton.addEventListener('click', () => {
   window.open(projects[0].sourceBtn);
 })
+
+// ================================================================================================================
+//                                               CONTACT SECTION  FORM-VALIDATION
+// ================================================================================================================
+const emailInput = document.getElementById('email');
+const msgBox = document.getElementById('validationMsg');
+const form = document.querySelector('form');
+
+
+function showError() {
+  msgBox.textContent = 'The email must be lowercase!';
+  msgBox.style.color = "#ff0000";
+}
+
+function showPassed () {
+  msgBox.textContent = 'Email is valid. Form submitted';
+  msgBox.style.color = "#00ff00";
+}
+
+form.addEventListener('submit', function (event) {
+  const emailPattern = /^[a-z0-9@.]+$/;
+  if(!emailPattern.test(emailInput.value)) {
+    showError();
+    event.preventDefault();
+  }
+  else{
+    showPassed();
+  }
+});
