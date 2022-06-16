@@ -10,7 +10,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  width: 95%;
   background-color: #e5e5e5;
 }
 
@@ -413,6 +414,7 @@ button {
 .contact-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-top-left-radius: 60px;
   min-width: 375px;
   min-height: 779px;
@@ -482,7 +484,18 @@ form button {
   font-size: 17px;
   line-height: 24px;
   color: #3a48cb;
-  margin-bottom: 114px;
+  margin-bottom: 0;
+}
+
+span#validationMsg {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  background: 1px 1px black;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  border-radius: 8px;
 }
 
 hr {
@@ -492,6 +505,7 @@ hr {
   border-radius: 10px;
   width: 134px;
   margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 /* Moibile-Menu */
@@ -762,6 +776,5 @@ button:active {
 
   form button {
     margin: 0 auto;
-    margin-bottom: 140px;
   }
 }
