@@ -29,6 +29,7 @@ const popUpClosedButton = document.querySelector('#closed-Btn');
 
 const projects = [
   {
+    id: 1,
     class: "tonic-frontpage padding",
     name: 'Tonic',
     image: './images/Snapshoot-Portfolio.png',
@@ -42,6 +43,7 @@ const projects = [
     sourceBtn: 'https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/main/index.html'
   },
   {
+    id: 2,
     class: "multi-post-availability padding",
     name: 'Multi-Post Stories',
     image: './images/Availability.png',
@@ -53,6 +55,7 @@ const projects = [
     sourceBtn: 'https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/main/index.html'
   },
   {
+    id: 3,
     class: "Gymfit padding",
     name: 'Tonic',
     image: './images/Gymfit.png',
@@ -64,6 +67,7 @@ const projects = [
     sourceBtn: 'https://github.com/principlebrothers/Portfolio-Mobile-Version/blob/main/index.html'
   },
   {
+    id: 4,
     class: "professional padding",
     name: 'Multi-Post Stories',
     image: './images/Professional.png',
@@ -102,7 +106,7 @@ for (let i = 0; i < len; i += 1) {
           <li><a href="#">${project.languages[1]}</a></li>
           <li><a href="#">${project.languages[2]}</a></li>
       </ul>
-      <button type="button" class="popup">See Project</button>
+      <button type="button" class="popup" id=${project.id}>See Project</button>
   </div>
 </div>`;
 }
@@ -112,13 +116,54 @@ const popUpButton = document.querySelectorAll('.popup');
 const overLay = document.getElementById("overlay");
 const liveButton = document.querySelector('.live');
 const sourceButton = document.querySelector('.source');
+const popUpTonicDiv = document.querySelector('#specialPopUp');
+
+function popImageChange(selectedBtn) {
+  for (let i = 0; i < len; i += 1) {
+    let project = projects[i];
+    
+    if (project.id === selectedBtn) {
+      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
+    }
+    else if (project.id === selectedBtn) {
+      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
+    }
+    else if (project.id === selectedBtn) {
+      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
+    }
+    else if (project.id === selectedBtn) {
+      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
+    }
+  }
+}
 
 for (let i = 0; i < popUpButton.length; i += 1) {
   const btnSelected = popUpButton[i];
-  btnSelected.addEventListener('click', () => {
-    popUpWindow.style.display = 'block';
-    overLay.classList.add('active');
-    overLay.style.display = 'block';
+  btnSelected.addEventListener('click', (e) => {
+    if (Number(btnSelected.id) === 1) {
+      popUpWindow.style.display = 'block';
+      overLay.classList.add('active');
+      overLay.style.display = 'block';
+      popImageChange(Number(btnSelected.id));
+    }
+    else if (Number(btnSelected.id) === 2) {
+      popUpWindow.style.display = 'block';
+      overLay.classList.add('active');
+      overLay.style.display = 'block';
+      popImageChange(Number(btnSelected.id));
+    }
+    else if (Number(btnSelected.id)=== 2) {
+      popUpWindow.style.display = 'block';
+      overLay.classList.add('active');
+      overLay.style.display = 'block';
+      popImageChange(Number(btnSelected.id));
+    }
+    else if (Number(btnSelected.id) === 4) {
+      popUpWindow.style.display = 'block';
+      overLay.classList.add('active');
+      overLay.style.display = 'block';
+      popImageChange(Number(btnSelected.id));;
+    }
   })
 }
 
@@ -126,6 +171,8 @@ popUpClosedButton.addEventListener('click', () => {
   popUpWindow.style.display = 'none';
   overlay.classList.remove('active');
   overLay.style.display = 'none';
+  const popImageContainer = document.querySelector('.popup-portfolio-image')
+  popImageContainer.remove();
 })
 
 liveButton.addEventListener('click', () => {
