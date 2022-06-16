@@ -118,6 +118,7 @@ const liveButton = document.querySelector('.live');
 const sourceButton = document.querySelector('.source');
 const popUpTonicDiv = document.querySelector('#specialPopUp');
 
+
 function popImageChange(selectedBtn) {
   for (let i = 0; i < len; i += 1) {
     let project = projects[i];
