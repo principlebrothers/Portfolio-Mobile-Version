@@ -153,7 +153,7 @@ for (let i = 0; i < popUpButton.length; i += 1) {
       overLay.style.display = 'block';
       popImageChange(Number(btnSelected.id));
     }
-    else if (Number(btnSelected.id)=== 2) {
+    else if (Number(btnSelected.id)=== 3) {
       popUpWindow.style.display = 'block';
       overLay.classList.add('active');
       overLay.style.display = 'block';
