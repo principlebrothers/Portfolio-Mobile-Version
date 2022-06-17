@@ -1,10 +1,10 @@
-const emailInput = document.getElementById('email');
+const inputEmail = document.getElementById('email');
 const message = document.getElementById('msg');
 const inputName = document.getElementById('name');
 
 function storedData() {
   const formData = {
-    email: emailInput.value,
+    email: inputEmail.value,
     msg: message.value,
     name: inputName.value
   };
@@ -15,15 +15,19 @@ function getData(){
   const receivedData = localStorage.getItem('form');
   if(receivedData) {
     const formObject = JSON.parse(receivedData);
-    emailInput.value = formObject.email;
+    inputEmail.value = formObject.email;
     message.value = formObject.msg;
     inputName.value = formObject.name;
   }
 }
 
 window.onload = () => {
-  emailInput.addEventListener('input',storedData());
+  inputEmail.addEventListener('input',storedData());
   message.addEventListener('input', storedData());
   inputName.addEventListener('input',storedData());
   getData();
 };
+
+inputName.onchange = storedData;
+inputEmail.onchange = storedData;
+message.onchange = storedData;
