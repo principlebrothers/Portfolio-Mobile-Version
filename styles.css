@@ -689,6 +689,9 @@ button:active {
 
   .popup-portfolio-image {
     margin-bottom: 59px;
+    width: 70%;
+    position: relative;
+    left: 15%;
   }
 
   .text-btn-container {
