@@ -14,10 +14,10 @@ function storedData() {
 function getData(){
   const receivedData = localStorage.getItem('form');
   if(receivedData) {
-    fetch = JSON.parse(receivedData);
-    inputEmail.value = fetch.email;
-    message.value = fetch.msg;
-    inputName.value = fetch.name;
+    const formObject = JSON.parse(receivedData);
+    inputEmail.value = formObject.email;
+    message.value = formObject.msg;
+    inputName.value = formObject.name;
   }
 }
 
