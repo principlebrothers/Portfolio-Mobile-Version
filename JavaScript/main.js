@@ -186,11 +186,7 @@ const form = document.querySelector('form');
 function showError() {
   msgBox.textContent = 'The email must be lowercase!';
   msgBox.style.color = "#ff0000";
-}
-
-function showPassed () {
-  msgBox.textContent = 'Email is valid. Form submitted';
-  msgBox.style.color = "#00ff00";
+  msgBox.style.fontStyle = "normal";
 }
 
 form.addEventListener('submit', function (event) {
@@ -198,8 +194,5 @@ form.addEventListener('submit', function (event) {
   if(!emailPattern.test(emailInput.value)) {
     showError();
     event.preventDefault();
-  }
-  else{
-    showPassed();
   }
 });
