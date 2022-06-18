@@ -22,9 +22,6 @@ function getData(){
 }
 
 window.onload = () => {
-  inputEmail.addEventListener('input',storedData());
-  message.addEventListener('input', storedData());
-  inputName.addEventListener('input',storedData());
   getData();
 };
 

@@ -126,15 +126,6 @@ function popImageChange(selectedBtn) {
     if (project.id === selectedBtn) {
       popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
     }
-    else if (project.id === selectedBtn) {
-      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
-    }
-    else if (project.id === selectedBtn) {
-      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
-    }
-    else if (project.id === selectedBtn) {
-      popUpTonicDiv.insertAdjacentHTML("afterend", `<img class="popup-portfolio-image" src="${project.image}" alt="${project.alt}">`);
-    }
   }
 }
 
