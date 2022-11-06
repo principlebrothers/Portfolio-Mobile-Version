@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Ernest Portfolio](https://principlebrothers.github.io/Portfolio-Mobile-Version/)
+[Live Portfolio Link](https://principlebrothers.github.io/Portfolio-Mobile-Version/)
 
 
 ## Getting Started
