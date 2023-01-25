@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-*,
-*::before,
-*::after {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3a48cb;
+  --secondary-color: #344563;
+  --tertiary-color: #172b4d;
+  --quaternary-color: #e5e5e5;
+  --quinary-color: #fff;
+  --senary-color: #f5f8fa;
+  --primary-font: 'Poppins', sans-serif;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   width: 95%;
-  background-color: #e5e5e5;
+  background-color: var(--quaternary-color);
 }
 
 .head-section {
   background: url(./images/Ellipse\ 3.png) 100% 20% no-repeat, url(./images/Top-right-Rectangle.png) 100% 15% no-repeat, url(./images/Ellipse\ 12.png) no-repeat 8% 19%, url(./images/Rectangle\ 6.png) no-repeat -13% 17%, url(./images/Rectangle\ 7.png) 45% 13% no-repeat, url(./images/Ellipse\ 12.png) no-repeat 6% 90%, url(./images/Ellipse\ 4.png) 65% 86% no-repeat, url(./images/buttom-rectangle.png) 63% 90% no-repeat;
-  background-color: #fff;
+  background-color: var(--quinary-color);
   padding: 15px;
   border-bottom-left-radius: 55px;
   margin-bottom: 114px;
@@ -33,7 +41,7 @@ header {
 }
 
 .a_logo {
-  color: #3a48cb;
+  color: var(--primary-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -51,7 +59,7 @@ nav {
   display: block;
   text-decoration: none;
   height: auto;
-  color: #344563;
+  color: var(--secondary-color);
 }
 
 #metaMenu {
@@ -67,7 +75,7 @@ main {
 }
 
 .intro {
-  color: #172b4d;
+  color: var(--tertiary-color);
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -76,7 +84,7 @@ main {
 }
 
 .main-paragraph {
-  color: #344563;
+  color: var(--secondary-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -89,6 +97,7 @@ main {
   font-weight: 400;
   line-height: 23px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 .headline-section ul {
@@ -105,7 +114,7 @@ li {
 
 .twiter:hover {
   border: 3px dotted #1da1f2;
-  background-color: #f5f8fa;
+  background-color: var(--senary-color);
   color: white;
   padding: 8px;
   border-radius: 50px;
@@ -113,31 +122,31 @@ li {
 
 .linkendIn:hover {
   border: 3px dotted #0077b5;
-  background-color: #f5f8fa;
+  background-color: var(--senary-color);
   color: white;
   padding: 8px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .mail:hover {
   border: 3px dotted #34a853;
-  background-color: #f5f8fa;
+  background-color: var(--senary-color);
   color: white;
   padding: 8px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .github:hover {
   border: 3px dotted #6e5494;
-  background-color: #f5f8fa;
+  background-color: var(--senary-color);
   color: white;
   padding: 8px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .peace:hover {
   border: 3px dotted #c9510c;
-  background-color: #f5f8fa;
+  background-color: var(--senary-color);
   color: white;
   padding: 8px;
   border-radius: 50px;
@@ -154,7 +163,7 @@ li {
 }
 
 .popup-container {
-  background-color: #fff;
+  background-color: var(--quinary-color);
   margin: 60px 16px 37px 16px;
   border-radius: 16px;
   padding: 16px;
@@ -182,7 +191,7 @@ li {
 .popup-languages {
   display: flex;
   gap: 8px;
-  color: #3a48cb;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 12px;
   margin-bottom: 48px;
@@ -225,7 +234,7 @@ li {
 
 .padding {
   padding: 10px;
-  background-color: #fff;
+  background-color: var(--quinary-color);
   border-radius: 16px;
 }
 
@@ -236,7 +245,7 @@ li {
 }
 
 h2 {
-  color: #172b4d;
+  color: var(--tertiary-color);
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -251,7 +260,7 @@ h2 {
 }
 
 .canopy {
-  color: #344563;
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -278,7 +287,7 @@ h2 {
 }
 
 .tonic-details {
-  color: #344563;
+  color: var(--secondary-color);
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -295,7 +304,7 @@ h2 {
 }
 
 .programing-languages a {
-  color: #3a48cb;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 12px;
   text-decoration: none;
@@ -313,9 +322,9 @@ button {
   font-size: 14px;
   line-height: 24px;
   border-radius: 8px;
-  color: #3a48cb;
-  border: 1px solid #3a48cb;
-  background: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background: var(--quinary-color);
   padding: 12px;
   margin-bottom: 24px;
   box-shadow: 0 6px #999;
@@ -323,7 +332,7 @@ button {
 
 /* About Section */
 .about {
-  background-color: #fff;
+  background-color: var(--quinary-color);
   border-top-right-radius: 55px;
   margin: 0;
   padding: 16px;
@@ -370,7 +379,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #344563;
+  color: var(--secondary-color);
 }
 
 .about-lang {
@@ -407,7 +416,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #344563;
+  color: var(--secondary-color);
 }
 
 /* Contact section */
@@ -418,7 +427,7 @@ button {
   border-top-left-radius: 60px;
   min-width: 375px;
   min-height: 779px;
-  background: #3a48cb;
+  background: var(--primary-color);
 }
 
 .contact-background {
@@ -479,11 +488,11 @@ form textarea {
 
 form button {
   width: 140px;
-  background: #fff;
+  background: var(--quinary-color);
   border-radius: 8px;
   font-size: 17px;
   line-height: 24px;
-  color: #3a48cb;
+  color: var(--primary-color);
   margin-bottom: 0;
 }
 
@@ -524,7 +533,7 @@ hr {
   justify-content: flex-end;
   padding-right: 38px;
   padding-top: 55px;
-  color: #fff;
+  color: var(--quinary-color);
   text-decoration: none;
   font-size: 22px;
 }
@@ -540,7 +549,7 @@ hr {
 }
 
 .in-text-link {
-  color: #fff;
+  color: var(--quinary-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
@@ -632,7 +641,7 @@ button:active {
 @media (max-width: 768px) {
   #metaMenu {
     display: block;
-    color: #3a48cb;
+    color: var(--primary-color);
     font-size: 23px;
   }
 
