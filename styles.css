@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--primary-font);
   margin: 0 auto;
   width: 95%;
   background-color: var(--quaternary-color);
